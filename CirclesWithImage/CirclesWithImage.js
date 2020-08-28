@@ -10,7 +10,8 @@ d3.text("data.csv", function(error, text) {
 	if (error) throw error;
 	var colNames = "id,cx,cy,weightage,imagePath\n" + text;
 	var data = d3.csv.parse(colNames);
-	   	
+	   
+	console.log(data)
 var defs = svg.append("defs");
 
 defs.selectAll("circle")
