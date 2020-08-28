@@ -4,15 +4,13 @@ var width = 1500,
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height)
-	.style("background-color", "red")
+	
 
 d3.text("data.csv", function(error, text) {
 	if (error) throw error;
 	var colNames = "id,cx,cy,weightage,imagePath\n" + text;
 	var data = d3.csv.parse(colNames);
-	   
-
-		
+	   	
 var defs = svg.append("defs");
 
 defs.selectAll("circle")
@@ -28,7 +26,7 @@ defs.selectAll("circle")
 	.attr("width","1")
 	.attr("preserveAspectRatio","none")
 	.attr("xmlns:xlink","http://wwww.w3.org/1999/xlink")
-	.attr("xlink:href", function(d){ return d.imagePath	});
+	.attr("xlink:href", function(d){ return d.imagePath});
 
 var circles = svg.append("circle")
 					.attr("class","circle")
