@@ -8,17 +8,13 @@ var svg = d3.select("body").append("svg")
 	
 
 d3.csv("data.csv", function(data){
+Console.log("123");
+	
+var circles = svg.selectAll('circle')
+.data(data).enter().append('circle')
+.attr("cx", "100")
+.attr("cy", "100")
+.attr("r", "50");
 
-
-
-
-var circles = svg.selectAll('circle').data(data).enter().append('circle')
-
-					
-					.attr("fill", "blue")
-					.attr("cx", function(d){console.log(d.cx); return 100})
-					.attr("cy", function(d){console.log(d.cy);return 100})
-					.attr("r", function(d){console.log("1");return 10})
-					.style("stroke-width", 3) 
 
 });
