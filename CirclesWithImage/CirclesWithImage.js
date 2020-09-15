@@ -12,8 +12,8 @@ d3.csv("data.csv", function(data){
 
 
 
-var circles = svg.append("circle")
-.data(data)
+var circles = svg.selectAll('circle').data(data).enter().append('circle')
+
 					
 					.attr("fill", "blue")
 					.attr("cx", function(d){console.log(d.cx); return 100})
