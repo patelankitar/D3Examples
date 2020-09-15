@@ -10,11 +10,6 @@ var svg = d3.select("body").append("svg")
 d3.csv("data.csv", function(data){
 
 	
-var circles = svg.selectAll('circle')
-.data(data).enter().append('circle')
-.attr("cx", "100")
-.attr("cy", "100")
-.attr("r", "50");
-
+console.log("1");
 
 });
