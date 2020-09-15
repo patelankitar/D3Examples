@@ -16,9 +16,9 @@ var circles = svg.append("circle")
 .data(data)
 					
 					.attr("fill", "blue")
-					.attr("cx", function(d){console.log(d.cx); return d.cx})
-					.attr("cy", function(d){console.log(d.cy);return d.cy})
-					.attr("r", function(d){console.log("1");return d.weightage})
+					.attr("cx", function(d){console.log(d.cx); return 100})
+					.attr("cy", function(d){console.log(d.cy);return 100})
+					.attr("r", function(d){console.log("1");return 10})
 					.style("stroke-width", 3) 
 
 });
