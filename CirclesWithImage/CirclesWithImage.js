@@ -8,7 +8,7 @@ var svg = d3.select("body").append("svg")
 	
 
 d3.csv("data.csv", function(data){
-console.log("123");
+
 	
 var circles = svg.selectAll('circle')
 .data(data).enter().append('circle')
