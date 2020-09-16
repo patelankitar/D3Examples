@@ -4,7 +4,7 @@ var width = 500,
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height)
-    .style("background-color", "lightblue")
+    .style("background-color", "red")
 	
 
 d3.csv("data.csv", function(data){
@@ -15,8 +15,8 @@ d3.csv("data.csv", function(data){
 	
 	//Add the circle attributes
 var circleAttributes = circles
-                       .attr("cx", function (d) { return d.cx; })
-                       .attr("cy", function (d) { return d.cy; })
-                       .attr("r", function (d) { return 50; })
-                       .style("fill", "red");
+                       .attr("cx", 100)
+                       .attr("cy", 200)
+                       .attr("r", 50)
+                       .style("fill", "blue");
 });
