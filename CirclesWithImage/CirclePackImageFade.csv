@@ -1,0 +1,22 @@
+id,parentId,GroupId,size,ImagePath,UniqueId,ShowPriority
+root,
+Administration,root,1,,,,High
+Provost,root,2,,,,,Medium
+Legal,root,3,,,,,Medium
+Dept1,root,4,,,,,Low
+Dept2,root,5,,,,,Medium
+Dept3,root,6,,,,,Low
+Mr. ABC,Administration,1,10,image/image.jpg,1,High
+Ms. XYZ,Administration,1,10,image/image.jpg,2,Low
+Dr. JKL,Administration,1,10,image/image.jpg,3,Medium
+Dr. Pranesh Aswath,Provost,2,10,image/Pranesh_Aswath.jpg,4,High
+Ms. Katie Hageman,Provost,2,10,image/Katie_Hageman.jpg,5,Medium
+Dr. Curtis Andressen,Legal,3,10,image/Curtis_Andressen.jpg,6,Medium
+Dr. Ann Cavallo,Dept1,4,10,image/Ann_Cavallo.jpg,7,Low
+Ms. Susan Elliott,Dept1,4,10,image/susan_elliott.jpg,8,Medium
+Dr. Dan Himarios,Dept2,5,10,image/Dan_Himarios.jpg,9,Medium
+Dr. Rebecca Lewis,Dept2,5,10,image/rebecca_lewis.jpg,10,High
+Dr. Maria Martinez-Cosio,Dept3,6,10,image/maria_cosio.jpg,11,Low
+Dr. Ashley Purgason,Dept3,6,10,image/ashley_purgason.jpg,12,High
+Edith Reed,Dept3,6,10,image/edith_reed.jpg,13,Medium
+Dr. Antoinette Sol,Dept3,6,10,image/Toni_Sol.jpg,14,Low
