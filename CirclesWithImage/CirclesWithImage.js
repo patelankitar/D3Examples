@@ -4,7 +4,7 @@ var width = 500,
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height)
-    .style("background-color", "black")
+    .style("background-color", "gray")
 	
 
 d3.csv("data.csv", function(data){
@@ -15,13 +15,13 @@ d3.csv("data.csv", function(data){
  
 
 var circles = svg.selectAll("circle")
-                          .data(jsonCircles)
+                          .data(data)
                           .enter()
                           .append("circle");
 
 var circleAttributes = circles
-                       .attr("cx", function (d) { return d.x_axis; })
-                       .attr("cy", function (d) { return d.y_axis; })
-                       .attr("r", function (d) { return d.radius; })
-                       .style("fill", function(d) { return d.color; });
+                       .attr("cx", function (d) { return d.cx; })
+                       .attr("cy", function (d) { return d.cy; })
+                       .attr("r", function (d) { return d.weightage; })
+                       .style("fill", "red");
 });
