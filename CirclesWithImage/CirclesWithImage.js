@@ -4,7 +4,7 @@ var width = 500,
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height)
-    .style("background-color", "black")
+    .style("background-color", "blue")
 	
 
 d3.csv("data.csv", function(data){
@@ -15,7 +15,7 @@ d3.csv("data.csv", function(data){
  
 
 var circles = svg.selectAll("circle")
-                          .data(jsonCircles )
+                          .data(data)
                           .enter()
                           .append("circle");
 
