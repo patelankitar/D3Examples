@@ -8,5 +8,15 @@ var svg = d3.select("body").append("svg")
 	
 
 d3.csv("data.csv", function(data){
-    console.log(data)
+   var circles = svg.selectAll("circle")
+                           .data(circleData)
+                           .enter()
+                           .append("circle");
+	
+	//Add the circle attributes
+var circleAttributes = circles
+                       .attr("cx", function (d) { return d.cx; })
+                       .attr("cy", function (d) { return d.cy; })
+                       .attr("r", function (d) { return 50; })
+                       .style("fill", "red");
 });
