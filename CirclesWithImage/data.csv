@@ -2,7 +2,7 @@ id,cx,cy,weightage,imagePath
 1,50,70,40,images/BradPitt.png
 2,150,350,60,images/DwayneJohnson.png
 3,120,150,50,images/LeonardoDiCaprio.png 
-4,220,450,10,images/MattDamon.png 
+4,220,450,20,images/MattDamon.png 
 5,550,600,50,images/EmmaWatson.png
 6,300,500,60,images/TomCruise.png 
 7,400,700,50,,images/WillSmith.png
