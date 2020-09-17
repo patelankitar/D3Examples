@@ -13,8 +13,8 @@ d3.csv("data.csv", function(CSVdata){
                           .append("circle");
 
 	var circleAttributes = circles
-                       .attr("cx", function (d) { return d.cx; })
-                       .attr("cy", function (d) { return d.cy; })
+                       .attr("cx", function (d) { return 200; })
+                       .attr("cy", function (d) { return 500; })
                        .attr("r", function (d) { return 100; })
                        .style("fill", "red");
 });
